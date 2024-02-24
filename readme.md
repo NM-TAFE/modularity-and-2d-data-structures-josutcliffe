@@ -20,10 +20,12 @@ In the process, you must use at least four functions, two classes, two files, an
 ### Step 1: Review the Existing Code
 
 Firstly, analyze the given tic-tac-toe game code. Understand the flow and functionality before proceeding with the refactoring.
+#JS: 24/02/2024: Done
 
 ### Step 2: Identify Components to Refactor
 
 Identify the parts of the code that can be improved. Determine which parts of the code can be grouped logically into separate modules.
+##JS: 24/02/2024: commented in tic_tac_o_oh.py file
 
 ### Step 3: Modularizing the Code
 
