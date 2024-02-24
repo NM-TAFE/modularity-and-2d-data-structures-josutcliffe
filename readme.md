@@ -20,12 +20,14 @@ In the process, you must use at least four functions, two classes, two files, an
 ### Step 1: Review the Existing Code
 
 Firstly, analyze the given tic-tac-toe game code. Understand the flow and functionality before proceeding with the refactoring.
-#JS: 24/02/2024: Done
+
+JS: 2024-02-24: Done
 
 ### Step 2: Identify Components to Refactor
 
 Identify the parts of the code that can be improved. Determine which parts of the code can be grouped logically into separate modules.
-##JS: 24/02/2024: commented in tic_tac_o_oh.py file
+
+JS: 2024-02-24: commented in tic_tac_o_oh.py file
 
 ### Step 3: Modularizing the Code
 
@@ -52,7 +54,9 @@ tic_tac_toe/
 - `__init__.py` files are used to indicate that a directory should be treated as a Python package. This allows the files within to be imported as a module in the test scripts or other python files.
 - `setup.py` is a Python file used to specify what modules and dependencies must be installed. I will provide this file, along with instructions on how to install your modules using this file.
 - You must give your Python files appropriate names. Do **not** use module1, 2, etc.
-  
+
+JS: 2024-02-24: Placeholder structure and files built
+
 ### Step 5: Create a Test Case
 
 Develop at least one test case for your refactored code. The test case should reside in the 'tests' directory. 
