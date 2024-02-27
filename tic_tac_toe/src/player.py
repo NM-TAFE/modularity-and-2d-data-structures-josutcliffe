@@ -1,2 +1,4 @@
-# placeholder for tic tac o player class
+# using Raf's code as a starting point
 
+class Player:
+    ...
