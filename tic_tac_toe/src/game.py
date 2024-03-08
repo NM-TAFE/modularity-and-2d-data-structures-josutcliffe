@@ -55,6 +55,10 @@ class Game:
         """
         try:
             self.board.make_move(row, col, self.current_player)
+        except InvalidPositionError:
+            print("Invalid position. Please try again.")
+        except PositionOccupiedError:
+            print("Position already occupied. Please try again.")
         except BoardError as e:
             print(e)
         else:

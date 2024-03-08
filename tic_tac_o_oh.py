@@ -7,7 +7,7 @@ empty = " "
 
 # Board size is hardcoded. entering a size less than 9 gives an error when printing the board,
 # and greater than 9 does nothing
-board = [empty] * 12
+board = [empty] * 9
 
 # Game loop
 while True:
@@ -29,7 +29,6 @@ while True:
             print("Player", board[wc[0]], "wins!")
             exit(0)
     # I would like to add the option to play again if the player wins
-
     # Check for tie
     if empty not in board:
         print("It's a tie!")
