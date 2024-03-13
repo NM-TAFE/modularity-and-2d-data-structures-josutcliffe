@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ZgPGTv83)
 # Overview 
 > Tic-Tac-Toe Game Refactoring
 
@@ -20,13 +21,19 @@ In the process, you must use at least four functions, two classes, two files, an
 
 Firstly, analyze the given tic-tac-toe game code. Understand the flow and functionality before proceeding with the refactoring.
 
+>JS: 2024-02-24: Done
+
 ### Step 2: Identify Components to Refactor
 
 Identify the parts of the code that can be improved. Determine which parts of the code can be grouped logically into separate modules.
 
+>JS: 2024-02-24: commented in tic_tac_o_oh.py file
+
 ### Step 3: Modularizing the Code
 
 Refactor the code to create at least two files. These files should contain logically grouped functions and classes. Ensure the file names are appropriate for the division you have chosen.
+
+>JS: 2024-03-08: Completed refactoring and modularisation of tic_tac_o_oh.py
 
 ### Step 4: Create a Modern Python Folder Structure
 
@@ -49,14 +56,20 @@ tic_tac_toe/
 - `__init__.py` files are used to indicate that a directory should be treated as a Python package. This allows the files within to be imported as a module in the test scripts or other python files.
 - `setup.py` is a Python file used to specify what modules and dependencies must be installed. I will provide this file, along with instructions on how to install your modules using this file.
 - You must give your Python files appropriate names. Do **not** use module1, 2, etc.
-  
+
+>JS: 2024-02-24: Placeholder structure and files built
+
 ### Step 5: Create a Test Case
 
 Develop at least one test case for your refactored code. The test case should reside in the 'tests' directory. 
 
+>JS: 2024-03-08: Completed unit tests for board.py and game.py
+
 ### Step 6: Implement 2D Data Structure
 
 Refactor the code such that it employs a 2D data structure for the tic-tac-toe game board.
+
+>JS: 2024-03-08: Completed refactoring and modularisation of tic_tac_o_oh.py
 
 ### Step 7: Written Report
 
@@ -65,6 +78,8 @@ Once you have completed your refactoring, write a brief report addressing the fo
 1. Justification for your refactoring decisions.
 2. The challenges you would have faced maintaining and testing the original monolithic code.
 3. How you would modify your refactored code to handle a custom-sized tic-tac-toe game (larger than 3x3), and how this implementation would be easier to handle than in the original code.
+
+>JS: 2024-03-08: written report completed, found in report.md
 
 ### Step 8: Short Answer (Knowledge Questions)
 
@@ -87,6 +102,8 @@ Provide brief answers to the knowledge-question worksheet.
 
 5. In Python even though variables created within a function are local, there are still situations where you can modify data outside the scope with a local variable. Explain this anomaly and relate it to both mutability and pass by reference.
 6. List two benefits of modular coding approaches. How do these benefits assist in the development of medium-sized applications?
+
+>JS: 2024-03-08: kba completed, found in kba.md
 
 ### Submission
 

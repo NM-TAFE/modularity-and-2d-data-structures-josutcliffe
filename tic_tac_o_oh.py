@@ -4,11 +4,16 @@
 p1 = "X"
 p2 = "O"
 empty = " "
+
+# Board size is hardcoded. entering a size less than 9 gives an error when printing the board,
+# and greater than 9 does nothing
 board = [empty] * 9
 
 # Game loop
 while True:
     # Print board
+    # The display of the board is hardcoded, and could be a function. there is no easy way to modify the generation
+    # of the board, e.g., this should be refactored
     print(board[0], "|", board[1], "|", board[2])
     print("---------")
     print(board[3], "|", board[4], "|", board[5])
@@ -17,18 +22,23 @@ while True:
     print()
 
     # Check for win
-    win_conditions = [(0,1,2), (3,4,5), (6,7,8), (0,3,6), (1,4,7), (2,5,8), (0,4,8), (2,4,6)]
+    # All win conditions are hard coded, which works, but there should be a better way to implement this methodology
+    win_conditions = [(0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6)]
     for wc in win_conditions:
         if board[wc[0]] == board[wc[1]] == board[wc[2]] != empty:
             print("Player", board[wc[0]], "wins!")
             exit(0)
-
+    # I would like to add the option to play again if the player wins
     # Check for tie
     if empty not in board:
         print("It's a tie!")
         exit(0)
 
     # Get next move
+
+    # This gameplay code block is hard coded. It would be good practice to modify/refactor and split out a number of
+    # functions/files, such as: gameplay updates vs. player inputs, remove hard coded values, add additional error
+    # handling
     while True:
         player = p1 if board.count(empty) % 2 == 1 else p2
         move = input("Next move for player " + player + " (0-8): ")
@@ -37,3 +47,5 @@ while True:
             break
         else:
             print("Invalid move, try again.")
+    # I would also prefer if there was a way for the player to restart or exit the game at anytime, currently
+    # only way to proceed or exit is to enter a valid move until the win condition is met.
